@@ -12,10 +12,10 @@ import numpy as np
 img_width, img_height = 96, 96
 validation_split = 0.1
 
-train_data_dir = '../input/train'
-test_data_dir = '../input/test'
+train_data_dir = 'train/'
+test_data_dir = 'test/'
 
-train_df = pd.read_csv('../input/train_labels.csv')
+train_df = pd.read_csv('train_labels.csv')
 train_df['filename'] = train_df['id'] + ".tif"
 train_df['class'] = train_df['label']
 
